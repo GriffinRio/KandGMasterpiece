@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private float health; 
+    private float health;
+    private string weapon;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +27,15 @@ public class Player : MonoBehaviour
     public void setHealth(float newHealth)
     {
         health = newHealth;
+    }
+
+    public string getWeapon()
+    {
+        return weapon;
+    }
+
+    public void setWeapon(string newWeapon)
+    {
+        weapon = newWeapon;
     }
 }
